@@ -1,0 +1,105 @@
+*,
+*::before,
+*::after {
+	padding: 0;
+	margin: 0;
+	box-sizing: inherit;
+}
+
+html {
+	box-sizing: border-box;
+	font-size: 62.5%;
+}
+
+body {
+	font-family: "Roboto", sans-serif;
+	font-size: 1.5rem;
+	font-weight: 400;
+	position: relative;
+}
+
+i {
+	color: rgb(96, 96, 96);
+	font-size: 2.4rem;
+}
+
+a {
+	text-decoration: none;
+	color: rgb(96, 96, 96);
+}
+
+/*--Navigation styles--*/
+.navbar {
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+	height: 6rem;
+	display: flex;
+	width: 100%;
+	position: fixed;
+	z-index: 100;
+	background-color: white;
+}
+
+.navbar ul {
+	list-style: none;
+}
+
+.navbar li {
+	margin-right: 2rem;
+}
+
+.nav--list {
+	display: flex;
+	list-style: none;
+	justify-content: space-between;
+	padding: 1rem;
+	align-items: center;
+	align-self: center;
+	flex: 1;
+}
+
+.nav--start {
+	display: flex;
+	align-items: center;
+}
+
+.nav--start img {
+	width: 10rem;
+	margin-left: 1rem;
+}
+
+.nav--search li {
+	display: flex;
+	align-items: center;
+}
+
+.nav--search input {
+	width: 60rem;
+	height: 3rem;
+	padding-left: 1rem;
+}
+
+.nav--search i {
+	background-color: white;
+	outline: none;
+	font-size: 2rem;
+	margin-left: -5rem;
+	background-color: white;
+	border: none;
+}
+
+.nav--end {
+	display: flex;
+	align-items: center;
+}
+
+.nav--end img {
+	width: 3.2rem;
+	height: 3.2rem;
+	border-radius: 50%;
+}
+
+.nav--end li {
+	margin-right: 2rem;
+}
+
+/*--Video Section--*/
