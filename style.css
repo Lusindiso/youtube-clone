@@ -15,7 +15,7 @@ body {
 	font-family: "Roboto", sans-serif;
 	font-size: 1.5rem;
 	font-weight: 400;
-	position: relative;
+	background-color: #f7f7f7;
 }
 
 i {
@@ -28,10 +28,9 @@ a {
 	color: rgb(96, 96, 96);
 }
 
-/*--Navigation styles--*/
 .navbar {
 	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-	height: 6rem;
+	height: 5rem;
 	display: flex;
 	width: 100%;
 	position: fixed;
@@ -74,17 +73,23 @@ a {
 
 .nav--search input {
 	width: 60rem;
-	height: 3rem;
+	height: 4rem;
 	padding-left: 1rem;
+}
+
+.nav--search input::-webkit-input-placeholder {
+	font-size: 1.7rem;
 }
 
 .nav--search i {
 	background-color: white;
-	outline: none;
+	outline: #777;
+	border-left: none;
 	font-size: 2rem;
-	margin-left: -5rem;
-	background-color: white;
-	border: none;
+
+	background-color: #f7f7f7;
+
+	padding: 0.8rem 2rem;
 }
 
 .nav--end {
@@ -102,4 +107,223 @@ a {
 	margin-right: 2rem;
 }
 
-/*--Video Section--*/
+main {
+	padding-top: 8rem;
+	padding-left: 3rem;
+	display: flex;
+}
+article {
+	width: 67%;
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+	margin: 3rem 0;
+	border-bottom: 1px solid #d3d3d3;
+	padding-bottom: 2rem;
+}
+
+h1 {
+	font-weight: 300;
+}
+h2 {
+	margin-bottom: 4rem;
+}
+.video {
+	position: relative;
+	padding-bottom: 50%;
+	height: 0;
+}
+
+.video iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border: none;
+}
+
+.video-stats p {
+	font-size: 1.6rem;
+	color: darkgray;
+	font-weight: rgb(96, 96, 96);
+	margin-top: 1rem;
+}
+
+.nav-video {
+	display: flex;
+	justify-content: space-between;
+	align-self: flex-end;
+}
+
+.nav-video a {
+	margin-right: 2rem;
+	font-size: 1.5rem;
+	font-weight: 500;
+}
+
+.nav-video i {
+	font-size: 1.5rem;
+	margin-right: 1rem;
+}
+
+.nav-video a:last-of-type {
+	margin-right: 0;
+}
+
+.video-description {
+	display: flex;
+	border-bottom: 1px solid #d3d3d3;
+	padding-bottom: 2rem;
+}
+
+.video-description img {
+	width: 5rem;
+	height: 5rem;
+	border-radius: 50%;
+	margin-right: 1.5rem;
+}
+
+.video-description h2 {
+	font-size: 1.5rem;
+	padding-top: 0.8rem;
+}
+
+.subscribe-btn {
+	background-color: rgb(204, 0, 0);
+	color: white;
+	align-self: flex-start;
+	padding: 1rem;
+	text-transform: uppercase;
+	width: 12rem;
+	font-weight: 600;
+}
+
+.video-creator p {
+	margin-bottom: 1rem;
+	font-size: 1.4rem;
+}
+
+.published {
+	font-size: 1.2rem;
+	font-weight: 300;
+}
+
+.video-creator a {
+	text-decoration: none;
+}
+
+h3 {
+	font-size: 1.6rem;
+	font-weight: 600;
+}
+
+aside {
+	margin-left: 2rem;
+	width: 33%;
+}
+
+.video__controls {
+	display: flex;
+	justify-content: space-between;
+	padding: 0.5rem 1rem;
+	padding-left: 0;
+	margin-bottom: 1rem;
+	align-content: center;
+}
+
+.video__controls > * {
+	align-self: center;
+	font-size: 1.5rem;
+	font-weight: 400;
+}
+
+.autoplay {
+	display: flex;
+}
+
+.autoplay > * {
+	align-self: center;
+	margin-left: 1rem;
+}
+
+.video__container div:first-child {
+	padding-bottom: 1.5rem;
+	margin-bottom: 1rem;
+	border-bottom: 1px solid #e5e5e5;
+}
+
+.video-box {
+	display: flex;
+	padding: 0.5rem 1rem;
+	padding-left: 0;
+}
+
+.video-box__thumbnail {
+	width: 26.8rem;
+	height: 9.4rem;
+	margin-right: 1rem;
+	flex: 0 0;
+}
+
+.video-box__details p {
+	font-size: 1.3rem;
+	font-weight: 400;
+	color: darkgray;
+	margin: 0.5rem 0;
+}
+
+aside {
+	margin-left: 2rem;
+}
+
+.video__controls {
+	display: flex;
+	justify-content: space-between;
+	padding: 0.5rem 1rem;
+	padding-left: 0;
+	margin-bottom: 1rem;
+	align-content: center;
+}
+
+.video__controls > * {
+	align-self: center;
+	font-size: 1.5rem;
+	font-weight: 400;
+}
+
+.autoplay {
+	display: flex;
+}
+
+.autoplay > * {
+	align-self: center;
+	margin-left: 1rem;
+}
+
+.video__container div:first-child {
+	padding-bottom: 1.5rem;
+	margin-bottom: 1rem;
+	border-bottom: 1px solid #e5e5e5;
+}
+
+.video-box {
+	display: flex;
+	padding: 0.5rem 1rem;
+	padding-left: 0;
+}
+
+.video-box__thumbnail {
+	width: 26.8rem;
+	height: 9.4rem;
+	margin-right: 1rem;
+}
+
+.video-box__details p {
+	font-size: 1.3rem;
+	font-weight: 400;
+	color: darkgray;
+	margin: 0.5rem 0;
+}
